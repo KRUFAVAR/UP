@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+header {
+  display: flex;
+  margin-left: 96px;
+  margin-top: 48px;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  width: 158px;
+  height: 40px;
+  display: flex;
+  justify-content: start;
+  margin-top: 2px;
+}
+
+#logo12 {
+  text-decoration: none;
+}
+
+span {
+  color: #A18A68;
+  font-size: 35px;
+  font-family: "Allerta Stencil", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.b {
+  color: black;
+}
+
+.nav {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 586px;
+  margin-top: 8px;
+  margin-bottom: 7px;
+  height: 27px;
+  align-items: center;
+  display: flex;
+}
+
+ul {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 47px;
+}
+ul li {
+  font-size: 16px;
+  list-style-type: none;
+  max-width: 109px;
+  margin-right: 10px;
+}
+
+.icon {
+  display: flex;
+  justify-content: end;
+  margin-right: 96px;
+  gap: 39px;
+  margin-left: 48px;
+}
+.icon svg {
+  width: 19px;
+  height: 19px;
+  margin-top: 11px;
+  margin-bottom: 9px;
+}
+
+.heed {
+  display: flex;
+  flex-wrap: nowrap;
+}/*# sourceMappingURL=header.css.map */

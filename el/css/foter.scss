@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+.foter{
+    display: flex;
+    justify-content: start;
+    margin-left: 96px;
+    width: 1248px;
+    height: 159px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: auto;
+}
+.con{
+    display: flex;
+    margin-left: 0;
+    justify-content: start;
+    margin-top: 56px;
+    gap: 39px;
+    color: #707070;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.kd{
+    display: flex;
+    justify-content: start;
+    margin-top: 57px;
+.grup2{
+    display: flex;
+    align-items: center;
+    gap: 29px;
+}
+}
+.pp{
+    margin-right: 750px
+}

@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #555;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    color: #666;
+}
+
+.profile-picture {
+    display: block;
+    margin: 20px auto;
+    max-width: 150px; /* Ограничение размера изображения */
+    border-radius: 75px; /* Круглое изображение */
+}
+
+a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+a:hover {
+    background: #0056b3;
+}
+
+.statistics {
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.statistics h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.statistics p {
+    margin: 5px 0;
+    color: #444;
+}

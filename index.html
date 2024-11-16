@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Продукты</title>
+</head>
+<body>
+    <div id="header"></div>
+    <h1>
+        Покупайте новинки
+    </h1>
+        <div class="lok_mod">
+              <input type="text" id="search-input" placeholder="Поиск по названию продукта..." />
+    
+    <select id="shop-select"  >
+        <option value="">Выберите магазин</option>
+        <!-- Опции магазинов будут добавлены через JS -->
+    </select>
+
+    <select id="sort-select">
+        <option value="default">Сортировка</option>
+        <option value="asc">По возрастанию цены</option>
+        <option value="desc">По убыванию цены</option>
+    </select>
+ 
+    <div>
+        <label><input type="radio" name="status" value="В продаже" checked/> В продаже</label>
+        <label><input type="radio" name="status" value="Нет в наличии" /> Нет в наличии</label>
+        
+    </div>
+    <div>
+    
+    </div>   
+     <label for="price-range">Цена:</label>
+        <input type="range" id="price-range" min="0" max="10000" value="0" step="100" />
+        <span id="price-value">0 руб.</span>
+        </div>
+    <div id="products-container"></div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            
+            <div class="modal-image" id="modal-product-image" style="width: 540px; height: 600px; background-color: gray; background-size: cover; background-position: center;"></div>
+     <div class="bloc1">
+                <h2 id="modal-product-name"></h2>
+                <div class="el">
+                      <p id="modal-product-price"></p>
+            <div id="modal-product-status"></div>  <!-- Поле для статуса -->
+                </div>
+          
+            <div class="owd">
+                <div id="modal-reviews-count"></div>
+            <div id="modal-product-rating"></div> <!-- Элемент для отображения рейтинга -->
+        </div>
+        <div id="modal-reviews-container"></div>
+        <div class="blok_sku">
+            <div id="modal-product-sku"></div>
+        <div id="modal-product-category"></div>  <!-- Поле для категории -->
+        </div>
+        <div class="dis">
+        <div id="modal-product-discount"></div>  <!-- Поле для скидки -->
+        </div>
+            </div>
+            <div class="h213">
+                <p id="otz">Описание</p> 
+            <p id="dp">Дополнительная информация</p>
+            </div>
+            
+            <div class="mje" id="mje-content">        
+            <p id="modal-product-description"></p>
+            </div>   
+            <div class="dop" id="dop-content">  
+                <div id="modal-product-material"></div>
+            <div id="modal-product-weight"></div>
+            <div id="modal-product-year"></div>
+            </div>
+            
+            
+           
+       
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            fetch("el/header.html")
+            .then(Response => Response.text())
+            .then(data => document.getElementById("header").innerHTML=data);
+            fetch("el/foter.html")
+            .then(Response => Response.text())
+            .then(data => document.getElementById("footer").innerHTML=data);
+        })
+    </script>
+</body>
+</html>
+

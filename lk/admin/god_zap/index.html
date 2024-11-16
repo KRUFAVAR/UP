@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор запроса</title>
+    <style>
+       /* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa; /* Светло-серый фон */
+    color: #333; /* Темный текст */
+    line-height: 1.6;
+}
+
+/* Заголовок */
+h1 {
+    color: #007bff; /* Голубой цвет заголовка */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Форма */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff; /* Белый фон формы */
+    padding: 20px;
+    border-radius: 8px; /* Округлые края */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Мягкая тень */
+    border: 1px solid #ddd; /* Легкая граница */
+}
+
+/* Метки */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Поля ввода */
+form select,
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Кнопка */
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3; /* Темно-синий при наведении */
+}
+
+/* Ссылка */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    form button {
+        font-size: 14px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Выберите запрос</h1>
+    <form id="query-form">
+        <label for="query-select">Выберите запрос:</label>
+        <select id="query-select" name="queryType">
+            <option value="1">Запрос 1: Поиск по имени мастера</option>
+            <option value="2">Запрос 2: Поиск по цене</option>
+            <option value="3">Запрос 3: Поиск по имени клиента</option>
+            <option value="4">Запрос 4: Получить список всех заказов, выполненных определенным мастером.</option>
+            <option value="5">Запрос 5: Получить список всех заказов, сгруппированных по типу изделия и указанием общего количества заказов для каждого типа.</option>
+            <option value="6">Запрос 6: Получить список всех клиентов, у которых сумма заказов превышает заданное значение.</option>
+            <option value="7">Запрос 7: Получить список всех изделий, у которых год выпуска позднее заданного значения.</option>
+            <option value="8">Запрос 8: Получить список всех заказов, у которых дата выполнения попадает в заданный временной интервал.</option>
+            <option value="9">Запрос 9: Получить список всех изделий, сгруппированных по материалу и указанием количества изделий для каждого материала.</option>
+            <option value="10">Запрос 10: Получить список всех мастеров, выполняющих определенные типы изделий.</option>
+        </select>
+
+        <div id="query-params"></div> <!-- Параметры запроса будут добавляться сюда -->
+        <button type="submit">Выполнить запрос</button>
+    </form>
+    <a href="../index.php">вернуться на админ панель</a>
+    <script src="script.js"></script>
+</body>
+</html>

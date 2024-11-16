@@ -1,0 +1,383 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+.foter {
+  display: flex;
+  justify-content: start;
+  margin-left: 96px;
+  width: 1248px;
+  height: 159px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: auto;
+}
+
+.con {
+  display: flex;
+  margin-left: 0;
+  justify-content: start;
+  margin-top: 56px;
+  gap: 39px;
+  color: #707070;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.kd {
+  display: flex;
+  justify-content: start;
+  margin-top: 57px;
+}
+.kd .grup2 {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+}
+
+.pp {
+  margin-right: 750px;
+}
+
+header {
+  display: flex;
+  margin-left: 96px;
+  margin-top: 48px;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  width: 158px;
+  height: 40px;
+  display: flex;
+  justify-content: start;
+  margin-top: 2px;
+}
+
+#logo12 {
+  text-decoration: none;
+}
+
+span {
+  color: #A18A68;
+  font-size: 35px;
+  font-family: "Allerta Stencil", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.b {
+  color: black;
+}
+
+.nav {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 586px;
+  margin-top: 8px;
+  margin-bottom: 7px;
+  height: 27px;
+  align-items: center;
+  display: flex;
+}
+
+ul {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 47px;
+}
+ul li {
+  font-size: 16px;
+  list-style-type: none;
+  max-width: 109px;
+  margin-right: 10px;
+}
+
+.icon {
+  display: flex;
+  justify-content: end;
+  margin-right: 96px;
+  gap: 39px;
+  margin-left: 48px;
+}
+.icon svg {
+  width: 19px;
+  height: 19px;
+  margin-top: 11px;
+  margin-bottom: 9px;
+}
+
+.heed {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+#products-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 948px;
+  margin-left: 400px;
+  margin-top: -350px;
+}
+
+h1 {
+  display: flex;
+  justify-content: start;
+  margin-left: -980px;
+  margin-top: 50px;
+}
+
+.product-block {
+  width: 300px;
+  height: 392px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+#price-value {
+  font-size: 18px;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+.product-image {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.discount {
+  position: relative;
+  width: 60px;
+  text-align: center;
+  left: 16px;
+  top: -285px;
+  background-color: #A18A68;
+  border-radius: 10%;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.product-name {
+  display: flex;
+  justify-content: start;
+  margin-left: 25px;
+  margin-top: -20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#shop-select {
+  max-height: 150px;
+  overflow-y: auto;
+  display: block;
+}
+
+.product-price {
+  display: flex;
+  justify-content: start;
+  margin-left: 25px;
+  font-size: 20px;
+  margin-top: 5px;
+  color: #A18A68;
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+select {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#search-input {
+  width: 261px;
+  height: 33px;
+}
+
+h4 {
+  margin: 0;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto; /* 15% от верхней границы и центрируем */
+  margin-top: 10%;
+  border: 1px solid #888;
+  padding: 10px;
+  width: 1000px; /* Ширина окна */
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modal-product-rating {
+  font-size: 24px; /* Размер звезд */
+  color: black; /* Цвет звезд */
+  line-height: 1; /* Убираем лишние отступы */
+}
+
+.lok_mod {
+  width: 262px;
+  height: 408px;
+  position: sticky;
+  top: 240px;
+  display: flow;
+  margin-left: -980px;
+}
+
+.modal-image {
+  width: 540px;
+  height: 600px;
+}
+
+.bloc1 {
+  position: relative;
+  top: -620px;
+  left: 570px;
+}
+
+#modal-product-name {
+  font-size: 33px;
+}
+
+#modal-product-price {
+  color: #A18A68;
+  font-size: 20px;
+  position: relative;
+  top: -25px;
+}
+
+.owd {
+  display: flex;
+  justify-content: start;
+  gap: 24px;
+  flex-direction: row-reverse;
+}
+
+.review-block {
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+  font-size: 18px;
+}
+
+#modal-product-status {
+  font-size: 18px;
+}
+
+.el {
+  font-size: 18px;
+  display: flex;
+  justify-content: start;
+  gap: 40px;
+}
+
+#modal-reviews-container {
+  max-width: 410px;
+}
+
+.blok_sku {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+
+#modal-product-discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 30px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #A18A68;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.dis {
+  position: relative;
+  top: -310px;
+  left: -555px;
+}
+
+.h213 {
+  display: flex;
+  gap: 45px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: -400px;
+}
+
+.dop {
+  font-size: 18px;
+}
+
+.mje {
+  font-size: 18px;
+  display: flex;
+  margin-top: -30px;
+}/*# sourceMappingURL=styles.css.map */
